@@ -4,10 +4,11 @@
 </p><hr><h1 align="center"><img alt="Logo" title="#logo" width="200px" src="https://raw.githubusercontent.com/BrunoBelarminoNog/Ecoleta_NLW/d00ff2950045cec41edc0f1d337928376b8000a0/public/assets/logo.svg">
 <a><img alt="License" src="https://img.shields.io/github/license/BrunoBelarminoNog/Ecoleta_NLW"></a>
 </h1> 
-##💻 Sobre o projeto
+
+## 💻 Sobre o projeto
 O projeto Ecoleta trata-se de uma **aplicação web** destinada a conectar pessoas com entidades que tratam **lixo reciclável** de diversas categorias. A ideia de criar uma aplicação voltada ao meio ambiente surgiu da coincidência da data do curso e a data da **semana do meio ambiente**.
 
-##🛠 Tecnologias utilizadas
+## 🛠 Tecnologias utilizadas
 As seguintes ferramentas foram usadas na construção do projeto:
 - HTML
 - CSS
