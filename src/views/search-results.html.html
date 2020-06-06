@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% set bodyId = "page-search-results" %}
+
+{% block title %}
+    <title>Resultado da pesquisa</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="./css/search-results.css">
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/page-header.html" %}
+
+    <main>
+
+        {% if total > 0 %}
+
+            <h4>
+            <strong>{{total}} pontos</strong>
+            encontrados
+            </h4>
+            
+            <div class="cards">
+                <!-- ESTRUTURA DE REPETIÇÃO FOR DO NUNJUCKS -->
+                {% for place in places %}
+
+                <div class="card">
+                    <img src="{{ place.image }}" alt="{{ place.name}}">
+                    <div class="data">
+                        <h1>{{ place.name }}</h1>
+                        <h3>{{ place.items }}</h3>
+                        <p>
+                            {{ place.city }}, {{ place.state }}<br/>
+                            {{ place.address }}<br/>
+                            {{ place.address2 }}
+                        </p>
+                    </div>
+                </div>
+
+                {% endfor %}
+            </div>
+
+        {% else %}
+
+            <h4>
+            <strong>NENHUM</strong> local encontrado
+            </h4>
+
+        {% endif %}
+
+       
+
+
+    </main>
+{% endblock content %}
+
+{% block scripts %}{% endblock scripts %}

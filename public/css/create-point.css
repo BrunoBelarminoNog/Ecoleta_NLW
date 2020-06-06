@@ -1,0 +1,152 @@
+#page-create-point {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#page-create-point header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;   
+}
+#page-create-point header a{
+    color: var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+#page-create-point header a span {
+    background-image: url(../assets/arrow-left.svg);
+    display: flex;
+    width: 20px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+form {
+    background-color: #fff;
+    padding: 64px;
+    border-radius: 8px;
+    max-width: 730px;
+    margin: 80px auto;
+}
+
+form h1 {
+    font-size: 36px;
+}
+form fieldset {
+    margin-top: 64px;
+    border: 0;
+}
+form legend {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+form legend h2 {
+    font-size: 24px;
+}
+
+form legend span {
+    color: var(--title-color);
+    font-size: 14px;
+}
+
+form .field {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+form .field-group {
+    display: flex;
+
+}
+
+form input, form select {
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+
+form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+form .field-group .field + .field {
+    margin-left: 24px;
+}
+
+form button {
+    width: 260px;
+    height: 56px;
+    background-color: var(--prymary-color);
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    border: 0;
+    font-size: 16px;
+    margin-top: 40px;
+    transition: background-color 400ms;
+}
+form button:hover {
+    background-color:  #2fb86e;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.items-grid li {
+    background-color: #f5f5f5;
+    list-style: none;
+    border-radius: 8px;
+
+    border: 2px solid #f5f5f5;
+
+    height: 180px;
+
+    padding: 32px 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    text-align: center;
+
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.items-grid li:hover {
+    background: #e1faec;
+}
+
+
+.items-grid li span {
+    color: var(--title-color);
+}
+
+.items-grid li.selected {
+    background: #e1faec;
+    border: 2px solid #34cb79;
+}
+.items-grid li span,
+.items-grid li img {
+    pointer-events: none;
+}

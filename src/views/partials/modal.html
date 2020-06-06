@@ -1,0 +1,23 @@
+<div id="modal" class="hide">
+    <div class="content">
+        <div class="header">
+            <h1>Pontos de Coleta</h1>
+            <a href="#">Fechar</a>
+        </div>
+        <form action="/busca">
+            
+            <div class="search field">
+                <select name="uf" id="">
+                    <option value="">Selecione o Estado</option>
+                </select>
+                 <input type="hidden" name="state">                    
+                    <select name="city" id="" disabled required="required">
+                        <option value="">Selecione a Cidade</option>
+                    </select>
+                <button>
+                    <img src="./assets/search.svg" alt="Buscar">
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
