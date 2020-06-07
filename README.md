@@ -17,7 +17,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - MySQL (SQLite3)
 
 ## 😯 Melhorias extras
-- Adicinado na página de buscas "Estado" e "Cidades", com lista recuperada através da API do IBGE.
+- Adicionado na página de buscas "Estado" e "Cidades", com lista recuperada através da API do IBGE.
 - CSS responsivo para a maioria das telas mobile ou maiores.
 
 ## ✔️ Resultado
